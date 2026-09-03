@@ -48,7 +48,7 @@ const About = () => {
           {/* Text and Cards Column */}
           <motion.div variants={itemVariants} className="lg:col-span-8 flex flex-col space-y-6">
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              I’m a <strong>4th-year Computer Science and Data Science</strong> undergraduate at Sai University, with a strong interest in <strong>Artificial Intelligence, Machine Learning, Data Science, and software development</strong>. I enjoy exploring how AI can be applied to real-world problems, particularly through Generative AI, NLP, LLMs, and AI agents.
+              I’m a <strong>4th-year Computing and Data Science</strong> undergraduate at Sai University, with a strong interest in <strong>Artificial Intelligence, Machine Learning, Data Science, and software development</strong>. I enjoy exploring how AI can be applied to real-world problems, particularly through Generative AI, NLP, LLMs, and AI agents.
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
               Alongside my AI and data-focused interests, I have a solid foundation in full-stack web development, which helps me turn ideas and intelligent systems into practical applications. I enjoy learning through hands-on projects, experimenting with new technologies, and building solutions that combine AI, data, and software development.
@@ -61,7 +61,7 @@ const About = () => {
                   <FiBookOpen />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Academics</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">4th-Year B.Tech in Computer Science & Data Science at Sai University.</p>
+                <p className="text-sm text-slate-600 dark:text-slate-400">4th-Year B.Tech in Computing & Data Science at Sai University.</p>
               </div>
 
               <div className="glass p-6 rounded-xl border border-slate-200 dark:border-white/10 shadow-sm hover:shadow-md transition-shadow">
