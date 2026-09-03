@@ -61,7 +61,7 @@ const Hero = () => {
           </motion.h2>
           
           <motion.p variants={itemVariants} className="text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0 mb-10 text-base leading-relaxed">
-            I build full-stack web apps, explore machine learning models, and love working with NLP and LLMs. Currently seeking internships where I can contribute meaningfully and keep learning.
+            I’m a Computer Science and Data Science undergraduate passionate about Artificial Intelligence, Machine Learning, Data Science, and software development. I enjoy working with NLP, LLMs, and AI-driven applications while also building full-stack solutions to bring ideas into practice. Currently seeking internship opportunities where I can apply my skills, build meaningful solutions, and continue learning.
           </motion.p>
           
           <motion.div variants={itemVariants} className="flex flex-wrap justify-center lg:justify-start gap-4">
