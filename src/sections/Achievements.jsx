@@ -1,7 +1,13 @@
 import { motion } from 'framer-motion';
-import { FiStar, FiActivity, FiShield } from 'react-icons/fi';
+import { FiStar, FiActivity, FiShield, FiCpu } from 'react-icons/fi';
 
 const achievements = [
+  {
+    title: "Multi-Domain Support Triage Agent",
+    description: "Built a Multi-Domain Support Triage Agent as part of HackerRank Orchestrate (May 2026), designed to classify and route user queries across different domains using AI-agent concepts.",
+    icon: <FiCpu />,
+    link: "https://www.linkedin.com/in/koleti-sankeerthana-a093612a4/"
+  },
   {
     title: "Assistant Head Girl & Head Girl",
     description: "Served for two consecutive years, leading student initiatives and coordinating major school events.",
@@ -39,7 +45,7 @@ const Achievements = () => {
         <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mb-12"></div>
 
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

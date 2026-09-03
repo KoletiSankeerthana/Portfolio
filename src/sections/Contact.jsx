@@ -26,6 +26,8 @@ const Contact = () => {
     if (errors[id]) setErrors((prev) => ({ ...prev, [id]: '' }));
   };
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validate();
@@ -33,8 +35,18 @@ const Contact = () => {
       setErrors(validationErrors);
       return;
     }
+    setIsSubmitting(true);
+    
+    // Open default mail client pre-filled with user's message to sankeerthanakoleti@gmail.com
+    const mailtoSubject = encodeURIComponent(form.subject || `Portfolio Contact Message from ${form.name}`);
+    const mailtoBody = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
+    );
+    window.location.href = `mailto:sankeerthanakoleti@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+    
     setSubmitted(true);
     setForm({ name: '', email: '', subject: '', message: '' });
+    setIsSubmitting(false);
     setTimeout(() => setSubmitted(false), 5000);
   };
 
@@ -286,10 +298,11 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:shadow-primary/30 text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center text-base gap-2 cursor-pointer"
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:shadow-primary/30 text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:-translate-y-1 active:scale-95 flex items-center justify-center text-base gap-2 cursor-pointer disabled:opacity-50"
               >
                 <FiSend />
-                Send Message
+                {isSubmitting ? 'Sending Message...' : 'Send Message'}
               </button>
             </form>
           </motion.div>

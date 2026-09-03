@@ -1,19 +1,76 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiAward, FiExternalLink, FiCalendar } from 'react-icons/fi';
 
 const certifications = [
   {
+    title: "AI & Machine Learning",
+    issuer: "Edunet Foundation",
+    date: "Aug 2025",
+    category: "AI / ML",
+    link: "https://www.linkedin.com/in/koleti-sankeerthana-a093612a4/details/certifications/"
+  },
+  {
+    title: "Artificial Intelligence Fundamentals",
+    issuer: "IBM",
+    date: "Jul 2025",
+    category: "AI",
+    link: "https://www.linkedin.com/in/koleti-sankeerthana-a093612a4/details/certifications/"
+  },
+  {
+    title: "Introduction to Generative AI",
+    issuer: "Google Cloud",
+    date: "Jul 2025",
+    category: "Gen AI",
+    link: "https://www.linkedin.com/in/koleti-sankeerthana-a093612a4/details/certifications/"
+  },
+  {
+    title: "Getting Started with Artificial Intelligence",
+    issuer: "IBM",
+    date: "Jul 2025",
+    category: "AI",
+    link: "https://www.linkedin.com/in/koleti-sankeerthana-a093612a4/details/certifications/"
+  },
+  {
     title: "Ethical Hacking",
     issuer: "NPTEL",
-    date: "2024",
+    date: "Nov 2025",
     category: "Security",
     link: "https://www.linkedin.com/in/koleti-sankeerthana-a093612a4/details/certifications/"
   },
   {
-    title: "Python Programming Language",
+    title: "Front-End Software Engineering Job Simulation",
+    issuer: "Skyscanner (Forage)",
+    date: "Jul 2025",
+    category: "Software Engineering",
+    link: "https://www.linkedin.com/in/koleti-sankeerthana-a093612a4/details/certifications/"
+  },
+  {
+    title: "GenAI Powered Data Analytics Job Simulation",
+    issuer: "Tata Group (Forage)",
+    date: "Jun 2025",
+    category: "Data Analytics",
+    link: "https://www.linkedin.com/in/koleti-sankeerthana-a093612a4/details/certifications/"
+  },
+  {
+    title: "Data Analytics Job Simulation",
+    issuer: "Deloitte Australia (Forage)",
+    date: "Jun 2025",
+    category: "Data Analytics",
+    link: "https://www.linkedin.com/in/koleti-sankeerthana-a093612a4/details/certifications/"
+  },
+  {
+    title: "Learn the Python Programming Language",
     issuer: "Udemy",
-    date: "2023",
+    date: "Jul 2025",
     category: "Programming",
+    link: "https://www.linkedin.com/in/koleti-sankeerthana-a093612a4/details/certifications/"
+  },
+  {
+    title: "Journey to Cloud: Envisioning Your Solution",
+    issuer: "IBM",
+    date: "Jul 2025",
+    category: "Cloud",
     link: "https://www.linkedin.com/in/koleti-sankeerthana-a093612a4/details/certifications/"
   },
   {
@@ -33,6 +90,8 @@ const certifications = [
 ];
 
 const Certifications = () => {
+  const [showAll, setShowAll] = useState(false);
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.15 } },
@@ -42,6 +101,8 @@ const Certifications = () => {
     hidden: { opacity: 0, scale: 0.9 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   };
+
+  const displayedCerts = showAll ? certifications : certifications.slice(0, 8);
 
   return (
     <section id="certifications" className="section-padding bg-white dark:bg-slate-900/50">
@@ -58,7 +119,7 @@ const Certifications = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {certifications.map((cert, index) => (
+          {displayedCerts.map((cert, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
@@ -88,7 +149,6 @@ const Certifications = () => {
                   <span className="text-sm font-semibold text-slate-700 dark:text-slate-200">
                     {cert.issuer}
                   </span>
-                  {/* FIX 5: View Credential opens LinkedIn in new tab */}
                   <a
                     href={cert.link}
                     target="_blank"
@@ -103,6 +163,15 @@ const Certifications = () => {
             </motion.div>
           ))}
         </motion.div>
+
+        {certifications.length > 8 && (
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="mt-10 px-6 py-3 glass hover:bg-primary/10 border border-slate-300 dark:border-white/10 rounded-xl font-medium transition-all text-slate-800 dark:text-white shadow-sm"
+          >
+            {showAll ? "Show Less Certifications" : "View All Certifications (" + certifications.length + ")"}
+          </button>
+        )}
       </div>
     </section>
   );

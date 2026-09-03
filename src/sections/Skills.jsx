@@ -3,22 +3,22 @@ import { motion } from 'framer-motion';
 const skillCategories = [
   {
     title: 'Programming Languages',
-    skills: ['Python', 'C', 'C++', 'R', 'Julia', 'SQL'],
+    skills: ['Python', 'C', 'R', 'Julia', 'SQL'],
     color: 'from-blue-500 to-cyan-400'
   },
   {
     title: 'AI & Machine Learning',
-    skills: ['Scikit-learn', 'TensorFlow', 'Keras', 'LangChain', 'HuggingFace', 'NumPy', 'Pandas', 'Matplotlib'],
+    skills: ['RAG', 'MCP (Model Context Protocol)', 'LangGraph', 'LangChain', 'Gemini 2.5 Flash', 'PyTorch', 'Scikit-learn', 'TensorFlow', 'HuggingFace', 'Groq API', 'NumPy', 'Pandas'],
     color: 'from-purple-500 to-pink-500'
   },
   {
     title: 'Web Development',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js', 'Express.js', 'REST APIs'],
+    skills: ['HTML', 'CSS', 'JavaScript', 'React.js', 'FastAPI', 'Node.js', 'Express.js', 'REST APIs', 'JWT Authentication'],
     color: 'from-orange-400 to-red-500'
   },
   {
     title: 'Databases & Cloud',
-    skills: ['MongoDB', 'ChromaDB', 'SQL', 'AWS (EC2, S3, IAM)', 'Linux'],
+    skills: ['Qdrant Cloud', 'Supabase', 'ChromaDB', 'MongoDB', 'SQLite', 'AWS (EC2, S3, IAM)', 'Linux'],
     color: 'from-green-400 to-emerald-600'
   },
   {

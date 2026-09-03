@@ -1,7 +1,8 @@
+import profilePic from '../assets/profile.jpg';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { FiArrowRight, FiDownload, FiMail } from 'react-icons/fi';
-import { FaPython, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
+import { FaPython, FaReact, FaBrain, FaDatabase } from 'react-icons/fa';
 
 const Hero = () => {
   const containerVariants = {
@@ -56,7 +57,7 @@ const Hero = () => {
           </motion.h1>
           
           <motion.h2 variants={itemVariants} className="text-xl md:text-2xl font-semibold text-slate-700 dark:text-slate-300 mb-6">
-            B.Tech Student · CS & Data Science · AI Enthusiast
+            B.Tech Student · Computing & Data Science · AI Enthusiast
           </motion.h2>
           
           <motion.p variants={itemVariants} className="text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0 mb-10 text-base leading-relaxed">
@@ -71,7 +72,9 @@ const Hero = () => {
             {/* FIX 1: Direct download of resume PDF */}
             <a
               href="/resume.pdf"
-              download
+              download="Sankeerthana_Koleti_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cursor-pointer glass hover:bg-primary/10 border border-slate-300 dark:border-white/10 px-7 py-3 rounded-xl font-medium transition-all flex items-center text-slate-800 dark:text-white group"
             >
               Download Resume
@@ -95,8 +98,8 @@ const Hero = () => {
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-secondary/20 animate-pulse"></div>
             
             <img 
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-              alt="Developer workspace" 
+              src={profilePic} 
+              alt="Sankeerthana Koleti" 
               className="w-full h-full object-cover rounded-full border-4 border-white dark:border-slate-800 shadow-2xl z-10 relative"
             />
             
@@ -107,8 +110,8 @@ const Hero = () => {
             <motion.div variants={floatingVariants} animate="animate" style={{animationDelay: '1s'}} className="absolute top-1/4 -right-8 glass p-4 rounded-2xl shadow-lg z-20 text-yellow-500 text-3xl">
               <FaPython />
             </motion.div>
-            <motion.div variants={floatingVariants} animate="animate" style={{animationDelay: '2s'}} className="absolute bottom-10 -left-6 glass p-4 rounded-2xl shadow-lg z-20 text-green-500 text-3xl">
-              <FaNodeJs />
+            <motion.div variants={floatingVariants} animate="animate" style={{animationDelay: '2s'}} className="absolute bottom-10 -left-6 glass p-4 rounded-2xl shadow-lg z-20 text-purple-500 text-3xl">
+              <FaBrain />
             </motion.div>
             <motion.div variants={floatingVariants} animate="animate" style={{animationDelay: '3s'}} className="absolute -bottom-4 right-10 glass p-4 rounded-2xl shadow-lg z-20 text-blue-400 text-3xl">
               <FaDatabase />

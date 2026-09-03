@@ -3,6 +3,18 @@ import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi';
 
 const experiences = [
   {
+    role: "AI Intern",
+    company: "Altrosyn",
+    date: "Jun 2026 – Jul 2026",
+    location: "Remote",
+    description: [
+      "Developed an AI-powered Enterprise Compliance & Audit Intelligence Platform using RAG, LangGraph, and Gemini 2.5 Flash.",
+      "Implemented multi-agent workflows for compliance analysis, risk assessment, and automated audit report generation.",
+      "Integrated MCP-based Google Drive and Notion synchronization with Qdrant Cloud for semantic document retrieval.",
+      "Integrated AI services into a React, FastAPI, and Supabase application with JWT-based authentication."
+    ]
+  },
+  {
     role: "AI/ML Intern",
     company: "AICTE (Live Demo)",
     date: "May 2025 – Aug 2025",

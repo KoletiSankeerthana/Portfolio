@@ -30,7 +30,10 @@ const Resume = () => {
           </p>
           
           <a 
-            href="#" 
+            href="/resume.pdf" 
+            download="Sankeerthana_Koleti_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-bold text-lg hover:shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1 transition-all duration-300"
           >
             <FiDownload className="mr-3 text-xl" />

@@ -1,3 +1,4 @@
+import saiUniversityPic from '../assets/sai_university.png';
 import { motion } from 'framer-motion';
 import { FiBookOpen, FiTarget, FiCode } from 'react-icons/fi';
 
@@ -28,13 +29,13 @@ const About = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
           
-          {/* Profile Image Column */}
+          {/* Campus Image Column */}
           <motion.div variants={itemVariants} className="lg:col-span-4 flex justify-center">
-            <div className="relative w-64 h-80 rounded-2xl overflow-hidden shadow-2xl group">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+            <div className="relative w-64 h-80 rounded-2xl overflow-hidden shadow-2xl group border border-slate-200 dark:border-white/10">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
               <img 
-                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                alt="Sankeerthana Koleti" 
+                src={saiUniversityPic} 
+                alt="Sai University Campus" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute bottom-4 left-4 z-20">
@@ -47,10 +48,10 @@ const About = () => {
           {/* Text and Cards Column */}
           <motion.div variants={itemVariants} className="lg:col-span-8 flex flex-col space-y-6">
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              I am a dedicated <strong>Computer Science and Data Science</strong> undergraduate student at Sai University, maintaining a strong CGPA of 8.07. My academic journey is fueled by a profound passion for extracting meaningful insights from data and building intelligent, scalable systems.
+              I’m a <strong>Computing and Data Science</strong> undergraduate at Sai University, passionate about <strong>Artificial Intelligence, Data Science, and Software Development</strong>. I enjoy solving problems, working with data, and building practical applications that address real-world challenges.
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              With a foundation in full-stack web development and a specialization in modern AI methodologies, I strive to bridge the gap between complex algorithms and intuitive user experiences. I am constantly learning and exploring new technologies to stay at the forefront of the industry.
+              With a foundation in full-stack development and a growing focus on AI and machine learning, I’m continuously learning through hands-on projects and exploring new technologies. I’m always excited to turn ideas into useful solutions and grow as a developer.
             </p>
 
             {/* Info Cards */}
@@ -60,7 +61,7 @@ const About = () => {
                   <FiBookOpen />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Academics</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">B.Tech in Computing and Data Science. Continuous learner and researcher.</p>
+                <p className="text-sm text-slate-600 dark:text-slate-400">B.Tech in Computing and Data Science at Sai University.</p>
               </div>
 
               <div className="glass p-6 rounded-xl border border-slate-200 dark:border-white/10 shadow-sm hover:shadow-md transition-shadow">

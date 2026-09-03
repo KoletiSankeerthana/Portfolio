@@ -6,8 +6,6 @@ const education = [
     degree: "B.Tech in Computing and Data Science",
     institution: "Sai University, Chennai, Tamil Nadu",
     date: "Aug 2023 – May 2027",
-    score: "CGPA: 8.07",
-    scoreColor: "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400",
     icon: <FiBook />,
     iconBg: "bg-primary/10 text-primary"
   },
@@ -76,9 +74,11 @@ const Education = () => {
                     <FiCalendar className="shrink-0" />
                     {edu.date}
                   </div>
-                  <div className={`text-sm font-semibold px-3 py-1 rounded-full ${edu.scoreColor}`}>
-                    {edu.score}
-                  </div>
+                  {edu.score && (
+                    <div className={`text-sm font-semibold px-3 py-1 rounded-full ${edu.scoreColor}`}>
+                      {edu.score}
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
