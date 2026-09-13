@@ -3,6 +3,14 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const projects = [
   {
+    title: "Where Did I Keep It? – Offline Android App",
+    description: "A privacy-focused, offline-first Android application built with Jetpack Compose, Kotlin, and Room Database to help users store, categorize, and locate everyday belongings using custom hierarchical locations, photos, and advanced search.",
+    tech: ["Kotlin", "Android SDK", "Jetpack Compose", "Room DB", "MVVM", "Coroutines & Flow", "Material 3"],
+    github: "https://github.com/KoletiSankeerthana/Find_Item",
+    live: null,
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
     title: "Enterprise Compliance & Audit Intelligence Platform",
     description: "Developed an AI-powered enterprise compliance platform using Retrieval-Augmented Generation (RAG), LangGraph multi-agent orchestration, and MCP-based knowledge synchronization to automate compliance analysis, risk assessment, semantic search, and audit report generation.",
     tech: ["Python", "FastAPI", "React", "LangGraph", "LangChain", "Gemini 2.5 Flash", "Qdrant Cloud", "Supabase", "JWT", "MCP", "RAG"],
