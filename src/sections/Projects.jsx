@@ -3,68 +3,52 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const projects = [
   {
-    title: "Where Did I Keep It? – Offline Android App",
-    description: "A privacy-focused, offline-first Android application built with Jetpack Compose, Kotlin, and Room Database to help users store, categorize, and locate everyday belongings using custom hierarchical locations, photos, and advanced search.",
-    tech: ["Kotlin", "Android SDK", "Jetpack Compose", "Room DB", "MVVM", "Coroutines & Flow", "Material 3"],
-    github: "https://github.com/KoletiSankeerthana/Find_Item",
-    live: null,
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  },
-  {
     title: "Enterprise Compliance & Audit Intelligence Platform",
-    description: "Developed an AI-powered enterprise compliance platform using Retrieval-Augmented Generation (RAG), LangGraph multi-agent orchestration, and MCP-based knowledge synchronization to automate compliance analysis, risk assessment, semantic search, and audit report generation.",
-    tech: ["Python", "FastAPI", "React", "LangGraph", "LangChain", "Gemini 2.5 Flash", "Qdrant Cloud", "Supabase", "JWT", "MCP", "RAG"],
+    description: "Built an AI compliance platform using RAG and multi-agent workflows to automate compliance analysis, risk assessment, and audit reporting.",
+    tech: ["Python", "FastAPI", "LangGraph", "RAG", "MCP", "Qdrant", "Supabase"],
     github: "https://github.com/KoletiSankeerthana",
     live: null,
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
-    title: "SecureFlow AI – DevSecOps & Security Intelligence",
-    description: "An AI-augmented security intelligence system designed for automated code vulnerability analysis, DevSecOps workflow security, and real-time threat detection using intelligent agentic LLM reasoning.",
-    tech: ["Python", "LLMs", "DevSecOps", "Security Analysis", "React", "FastAPI", "AI Agents"],
+    title: "SecureFlow AI – Agentic DevSecOps Security Engineer",
+    description: "Built an Agentic AI platform to detect repository vulnerabilities, exposed secrets, dependency risks, and CI/CD security issues.",
+    tech: ["Python", "FastAPI", "LangGraph", "Gemini API", "GitHub API"],
     github: "https://github.com/shrinithisk/secureflow-ai",
     live: null,
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
-    title: "Full-Stack MERN E-Commerce Platform",
-    description: "A full-stack e-commerce web application built using the MERN stack, featuring authentication, role-based administration, product management, cart and checkout functionality, payment integration, order management, search, filtering, and responsive UI.",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Vercel"],
-    github: "https://github.com/KoletiSankeerthana/E_Commerce",
-    live: "https://e-commerce-twt9.vercel.app/",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    title: "Indian Constitution Chatbot – RAG AI Assistant",
-    description: "An AI-powered chatbot that answers questions about the Constitution of India using Retrieval-Augmented Generation (RAG). The system retrieves relevant constitutional content from a PDF and uses a Large Language Model to generate context-aware answers.",
+    title: "Constitution Chatbot – RAG-based AI Assistant",
+    description: "Developed a Retrieval-Augmented Generation (RAG) system to answer Indian Constitution queries using LLM-powered contextual retrieval with vector storage in ChromaDB.",
     tech: ["Python", "LangChain", "Groq API", "HuggingFace Embeddings", "ChromaDB"],
     github: "https://github.com/KoletiSankeerthana/Constitution_Chatbot",
     live: null,
     image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
+    title: "Full-Stack MERN E-Commerce Platform",
+    description: "Built a full-stack e-commerce platform with authentication, admin controls, payments, search, cart, and order tracking.",
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Render", "Vercel"],
+    github: "https://github.com/KoletiSankeerthana/E_Commerce",
+    live: "https://e-commerce-twt9.vercel.app/",
+    image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    title: "Where Did I Keep It? – Offline Android App",
+    description: "A privacy-focused, offline-first Android application built with Jetpack Compose, Kotlin, and Room Database to help users store, categorize, and locate everyday belongings.",
+    tech: ["Kotlin", "Android SDK", "Jetpack Compose", "Room DB", "MVVM", "Coroutines"],
+    github: "https://github.com/KoletiSankeerthana/Find_Item",
+    live: null,
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
     title: "Personal Expense Tracker Web App",
-    description: "A web-based personal finance application built with Python, Streamlit, and SQLite that allows users to manage daily expenses, set budgets, and analyze spending patterns through summaries and category-based insights.",
+    description: "A web-based personal finance application built with Python, Streamlit, and SQLite that allows users to manage daily expenses, set budgets, and analyze spending patterns.",
     tech: ["Python", "Streamlit", "SQLite", "Pandas", "Plotly"],
     github: "https://github.com/KoletiSankeerthana/Expense_Tracker",
     live: "https://expensetracker-g7zeguupnkodzsm9fhuyge.streamlit.app/",
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    title: "Speaker Identification using MFCC",
-    description: "A speaker identification system that uses speech signal processing and machine learning techniques to extract Mel-Frequency Cepstral Coefficients (MFCCs) from speech recordings and identify speakers using machine-learning classifiers.",
-    tech: ["Python", "Librosa", "Scikit-learn", "SVM / KNN / Random Forest", "Audio Signal Processing"],
-    github: "https://github.com/KoletiSankeerthana/MFCC_Speaker_Recognition",
-    live: null,
-    image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    title: "Emotion & Hate Speech Detection Web App",
-    description: "Designed a transformer-based NLP web application to detect emotions, analyze sentiment, and identify hate speech from user text input.",
-    tech: ["Python", "Hugging Face Transformers", "PyTorch", "Streamlit", "Plotly", "Pandas"],
-    github: "https://github.com/KoletiSankeerthana",
-    live: null,
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   }
 ];
 
